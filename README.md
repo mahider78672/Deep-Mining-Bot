@@ -17,8 +17,8 @@ LLM (e.g., GPT-2 or Open-Source Model) (For intelligent responses)
 PyMuPDF / pdfplumber (PDF text extraction)
 Next.js (Planned) (Frontend UI)
 Prerequisites
-Ensure you have the following installed:
 
+Ensure you have the following installed:
 Python 3.8 or later
 Virtual Environment (venv or conda)
 FastAPI and required dependencies

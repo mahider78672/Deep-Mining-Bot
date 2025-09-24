@@ -11,7 +11,7 @@ from transformers import GPT2LMHeadModel, GPT2Tokenizer
 # Initialize FastAPI
 app = FastAPI()
 
-# ✅ Define Upload Folder
+# Define Upload Folder
 UPLOAD_FOLDER = "uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
@@ -161,4 +161,5 @@ async def search_embeddings(query: str):
         "query": query,
         "response": response
     }
+
 

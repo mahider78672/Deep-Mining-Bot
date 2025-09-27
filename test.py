@@ -8,7 +8,7 @@ import torch
 import torch.nn.functional as F
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 
-# ✅ Initialize FastAPI
+# Initialize FastAPI
 app = FastAPI()
 
 # ✅ Define Upload Folder
@@ -161,3 +161,4 @@ async def search_embeddings(query: str):
         "query": query,
         "response": response
     }
+

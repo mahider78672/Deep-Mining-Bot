@@ -15,7 +15,7 @@ app = FastAPI()
 UPLOAD_FOLDER = "uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
-# ✅ Load Sentence Transformer for Embeddings
+# Load Sentence Transformer for Embeddings
 sentence_model = SentenceTransformer("all-MiniLM-L6-v2")
 
 # ✅ Load GPT-2 Model Globally (for faster response)
@@ -161,5 +161,6 @@ async def search_embeddings(query: str):
         "query": query,
         "response": response
     }
+
 
 

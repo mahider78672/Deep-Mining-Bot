@@ -22,7 +22,7 @@ sentence_model = SentenceTransformer("all-MiniLM-L6-v2")
 tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
 model = GPT2LMHeadModel.from_pretrained("gpt2")
 
-# ✅ Initialize FAISS Index
+#  Initialize FAISS Index
 faiss_index = None
 stored_sentences = []
 
@@ -161,6 +161,7 @@ async def search_embeddings(query: str):
         "query": query,
         "response": response
     }
+
 
 
 

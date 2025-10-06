@@ -18,7 +18,7 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 # Load Sentence Transformer for Embeddings
 sentence_model = SentenceTransformer("all-MiniLM-L6-v2")
 
-# ✅ Load GPT-2 Model Globally (for faster response)
+#  Load GPT-2 Model Globally (for faster response)
 tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
 model = GPT2LMHeadModel.from_pretrained("gpt2")
 
@@ -161,6 +161,7 @@ async def search_embeddings(query: str):
         "query": query,
         "response": response
     }
+
 
 
 

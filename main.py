@@ -26,7 +26,7 @@ model = GPT2LMHeadModel.from_pretrained("gpt2")
 faiss_index = None
 stored_sentences = []
 
-# ✅ Extract Text from PDF
+#  Extract Text from PDF
 def extract_text_from_pdf(pdf_path: str):
     try:
         doc = fitz.open(pdf_path)
@@ -161,6 +161,7 @@ async def search_embeddings(query: str):
         "query": query,
         "response": response
     }
+
 
 
 

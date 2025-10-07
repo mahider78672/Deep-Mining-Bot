@@ -46,7 +46,7 @@ async def upload_pdf(filename: str, file: UploadFile = File(...)):
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
 
-# ✅ Extract Text from PDF
+# Extract Text from PDF
 @app.post("/extract_text/{filename}")
 async def extract_text(filename: str):
     pdf_path = os.path.join(UPLOAD_FOLDER, filename)
@@ -161,6 +161,7 @@ async def search_embeddings(query: str):
         "query": query,
         "response": response
     }
+
 
 
 

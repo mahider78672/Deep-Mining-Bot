@@ -35,7 +35,7 @@ def extract_text_from_pdf(pdf_path: str):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error extracting text: {str(e)}")
 
-# ✅ Upload PDF
+# Upload PDF
 @app.post("/upload_pdf/{filename}")
 async def upload_pdf(filename: str, file: UploadFile = File(...)):
     try:
@@ -161,6 +161,7 @@ async def search_embeddings(query: str):
         "query": query,
         "response": response
     }
+
 
 
 

@@ -2,7 +2,7 @@
 
 Deep-Mining-Bot is an AI-powered document mining bot built using Python and FastAPI. It processes PDF documents uploaded by the developer and allows users to ask topic-specific questions through the UI. If the question is relevant to the document’s content, the bot provides an answer; otherwise, it denies the request.
 
-Features
+Features:
 PDF Processing: Extracts text from uploaded PDFs
 Vector Embeddings & RAG: Enhances response accuracy
 FastAPI Backend: Ensures high-performance API responses
